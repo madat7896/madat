@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Email Validation</title>
+
+<script>
+function check()
+{
+    var email = document.getElementById("email").value;
+
+    if(email.includes("@") && email.includes("."))
+    {
+        alert("Valid Email");
+    }
+    else
+    {
+        alert("Invalid Email");
+    }
+}
+</script>
+</head>
+
+<body>
+<h2>Email Validation</h2>
+
+Enter Email:
+<input type="text" id="email">
+
+<button onclick="check()">Validate</button>
+
+</body>
+</html>
